@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible issue in the local bridge.
+body:
+  - type: markdown
+    attributes:
+      value: Do not include access tokens, private media, or full project data. Distinguish a synthetic test from a real Edits result; include only non-identifying compatibility information.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: macOS, Node, Python and Edits versions; bridge version or commit.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Sanitized error or test output
+      description: Remove credentials and personal/project information before posting.

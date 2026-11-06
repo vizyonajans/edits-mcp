@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest a focused improvement to Edits MCP Bridge.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What workflow would this improve?
+      description: Describe the goal without sharing private media, tokens or project data.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: If this depends on a native Edits tool, say whether you observed it in the real catalog.
+    validations:
+      required: true
