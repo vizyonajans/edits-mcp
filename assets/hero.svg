@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+<title id="title">Edits MCP Bridge</title><desc id="desc">From an AI assistant to a real editing timeline. Local, permission-gated, live verified.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111726"/><stop offset="1" stop-color="#070b12"/></linearGradient><linearGradient id="accent"><stop stop-color="#b9ff66"/><stop offset="1" stop-color="#60efd0"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#263142" stroke-width=".6"/></pattern></defs>
+<rect width="1280" height="560" rx="24" fill="url(#bg)"/><rect x="640" width="640" height="560" fill="url(#grid)" opacity=".4"/>
+<g font-family="Arial,Helvetica,sans-serif"><rect x="64" y="57" width="161" height="28" rx="14" fill="#1f3025"/><text x="82" y="76" font-size="12" font-weight="700" letter-spacing="1.5" fill="#bcff85">LOCAL. BY DESIGN.</text>
+<text x="64" y="169" font-size="58" font-weight="800" letter-spacing="-2" fill="#f3f7fc">Edits MCP</text><text x="64" y="232" font-size="58" font-weight="800" letter-spacing="-2" fill="url(#accent)">Bridge.</text>
+<text x="66" y="283" font-size="21" fill="#b1bfd0">Your AI assistant. A real editing timeline.</text>
+<text x="66" y="318" font-size="16" fill="#8090a5">Native Edits tools · Explicit permissions · macOS</text>
+<g fill="#d5e1ee" font-size="14"><text x="66" y="424">95 automated tests</text><text x="252" y="424">Live workflow verified</text></g><path d="M65 388H540" stroke="#2b3748"/>
+<text x="65" y="495" font-size="11" letter-spacing="1.2" fill="#687b92">INDEPENDENT OPEN SOURCE PROJECT · MIT LICENSE</text>
+<g transform="translate(661 109)"><rect width="555" height="327" rx="16" fill="#121b29" stroke="#344256"/><circle cx="23" cy="24" r="4" fill="#71839c"/><circle cx="39" cy="24" r="4" fill="#71839c"/><circle cx="55" cy="24" r="4" fill="#71839c"/><text x="80" y="29" fill="#8fa0b6" font-size="12">PROMPT → PERMISSION → TIMELINE</text>
+<rect x="25" y="56" width="505" height="67" rx="9" fill="#1c2939"/><text x="43" y="83" font-size="14" fill="#edfaf3">Trim. Split. Add text. Export.</text><text x="43" y="105" font-size="12" fill="#91a6bd">Your agent calls only the tools you allow.</text>
+<path d="M277 132V151" stroke="#b9ff66" stroke-width="2"/><path d="m272 146 5 6 5-6" fill="none" stroke="#b9ff66" stroke-width="2"/>
+<rect x="25" y="168" width="505" height="130" rx="9" fill="#0b131f"/><g stroke="#29384d"><path d="M41 194H514M41 225H514M41 256H514"/></g>
+<rect x="42" y="202" width="172" height="22" rx="4" fill="#5075c9"/><rect x="220" y="202" width="245" height="22" rx="4" fill="#6a8ee1"/><rect x="42" y="233" width="423" height="17" rx="4" fill="#9778cc"/><rect x="42" y="264" width="423" height="17" rx="4" fill="#427768"/>
+<path d="M287 183V288" stroke="#c7ff79" stroke-width="2"/><path d="m281 183 6 7 6-7" fill="#c7ff79"/>
+<text x="51" y="217" fill="#eaf2ff" font-size="10">CLIP 01</text><text x="229" y="217" fill="#eaf2ff" font-size="10">CLIP 02</text><text x="51" y="246" fill="#f0eaff" font-size="10">TEXT OVERLAY</text><text x="51" y="277" fill="#dcf7ed" font-size="10">AUDIO</text></g></g></svg>
