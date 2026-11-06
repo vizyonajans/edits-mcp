@@ -3,7 +3,7 @@
 <h1 align="center">Edits MCP Bridge</h1>
 <p align="center"><strong>Connect your AI assistant to Instagram Edits on macOS.</strong><br>Discover native tools, control your timeline, and export video — with explicit permissions.</p>
 <p align="center"><a href="#quick-start">Quick start</a> · <a href="#live-demo">Live demo</a> · <a href="TESTING.md">Test evidence</a> · <a href="SECURITY.md">Security</a> · <a href="README.tr.md">Türkçe</a></p>
-<p align="center"><a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-b9ff66?style=flat-square&amp;labelColor=17202e"></a> <img alt="Node 22 or newer" src="https://img.shields.io/badge/Node.js-22%2B-60efd0?style=flat-square&amp;labelColor=17202e"> <img alt="Local stdio transport" src="https://img.shields.io/badge/transport-stdio-8eb6ff?style=flat-square&amp;labelColor=17202e"></p>
+<p align="center"><a href="https://github.com/vizyonajans/edits-mcp/actions/workflows/test.yml"><img alt="GitHub Actions tests" src="https://github.com/vizyonajans/edits-mcp/actions/workflows/test.yml/badge.svg"></a> <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-b9ff66?style=flat-square&amp;labelColor=17202e"></a> <img alt="Node 22 or newer" src="https://img.shields.io/badge/Node.js-22%2B-60efd0?style=flat-square&amp;labelColor=17202e"> <img alt="Local stdio transport" src="https://img.shields.io/badge/transport-stdio-8eb6ff?style=flat-square&amp;labelColor=17202e"></p>
 
 An independent, local MCP server that bridges **stdio MCP clients** to the **Automation MCP endpoint built into Edits**. It discovers Edits' actual tools and schemas rather than inventing an editing API.
 
@@ -156,6 +156,8 @@ The bridge limits native catalogs to 2000 tools/100 pages, the request queue to 
 **A timeout or cancellation does not roll back an edit.** Inspect Edits before retrying. The bridge never automatically replays a native editing call. [Read the full security model →](SECURITY.md)
 
 ## Test it yourself
+
+The GitHub Actions matrix has passed on macOS 15 / Ubuntu 24.04 with Node 22 / 24. [View the workflow and current results →](https://github.com/vizyonajans/edits-mcp/actions/workflows/test.yml)
 
 ```sh
 npm test

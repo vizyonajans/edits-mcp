@@ -14,7 +14,7 @@ The project is tested at two distinct levels: automated protocol/security tests 
 | Real Edits authenticated native discovery | **Passed**, 274 native tools discovered |
 | Real import → trim → split → text → save/reopen → export | **Passed** on generated test media |
 | Independent exported-file inspection and full decode | **Passed** |
-| GitHub Actions remote matrix | Configured; remote results must be verified after source upload |
+| GitHub Actions remote matrix | **Passed** on macOS 15 / Ubuntu 24.04 × Node 22 / 24 |
 
 [Real acceptance report](docs/LIVE_ACCEPTANCE.md) · [Sanitized acceptance JSON](docs/reports/live-acceptance.json)
 
@@ -120,7 +120,7 @@ The native Automation server was turned off after the acceptance run. The test d
 
 ## Evidence and CI
 
-Sanitized automated logs are in [docs/reports](docs/reports/). The GitHub workflow covers macOS 15 / Ubuntu 24.04 and Node 22 / 24, with Python 3.12. Those values are **CI target configurations**, not the owner's computer specifications. The workflow does not need an Edits token.
+Sanitized automated logs are in [docs/reports](docs/reports/). The GitHub workflow covers macOS 15 / Ubuntu 24.04 and Node 22 / 24, with Python 3.12. Those values are **CI target configurations**, not the owner's computer specifications. The workflow does not need an Edits token. [Recorded successful source run](https://github.com/vizyonajans/edits-mcp/actions/runs/42185187174).
 
 ```sh
 npm audit --omit=dev --json
