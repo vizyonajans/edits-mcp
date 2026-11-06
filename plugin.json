@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "edits-mcp",
+  "version": "0.1.0",
+  "description": "Control Edits on macOS through its native MCP endpoint, with explicit tool permissions and validated inputs.",
+  "license": "MIT",
+  "homepage": "https://github.com/vizyonajans/edits-mcp"
+}

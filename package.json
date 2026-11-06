@@ -1,0 +1,36 @@
+{
+  "name": "edits-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Permission-gated local MCP bridge for Edits on macOS",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "doctor": "python3 scripts/doctor.py",
+    "test:coverage": "node --experimental-test-coverage --test test/*.test.mjs",
+    "test:python": "python3 -m unittest discover -s test -p \"*_test.py\" -v",
+    "smoke": "node scripts/smoke.mjs",
+    "smoke:live": "node scripts/smoke.mjs --catalog",
+    "check:release": "node scripts/check-release.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "ajv": "8.20.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Edits MCP Bridge contributors"
+  },
+  "homepage": "https://github.com/vizyonajans/edits-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vizyonajans/edits-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vizyonajans/edits-mcp/issues"
+  }
+}
