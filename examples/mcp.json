@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "edits-local": {
+      "command": "/ABSOLUTE/PATH/TO/node",
+      "args": ["/ABSOLUTE/PATH/TO/edits-mcp/src/server.mjs"],
+      "env": {
+        "EDITS_MCP_URL": "http://127.0.0.1:19501/mcp",
+        "EDITS_TOKEN_FILE": "/ABSOLUTE/PRIVATE/PATH/edits.token",
+        "EDITS_ALLOWED_TOOLS": "[]",
+        "EDITS_ALLOW_WRITES": "0"
+      }
+    }
+  }
+}
