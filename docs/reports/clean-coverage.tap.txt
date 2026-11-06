@@ -1,0 +1,521 @@
+
+> edits-mcp@0.1.0 test:coverage
+> node --experimental-test-coverage --test test/*.test.mjs
+
+TAP version 13
+# Subtest: config restricts credentials to exact loopback MCP URL
+ok 1 - config restricts credentials to exact loopback MCP URL
+  ---
+  duration_ms: 0.7655
+  type: 'test'
+  ...
+# Subtest: token permissions, symlinks, missing token and multiline rejection
+ok 2 - token permissions, symlinks, missing token and multiline rejection
+  ---
+  duration_ms: 1.446125
+  type: 'test'
+  ...
+# Subtest: write and unknown tools fail closed even if allowlisted
+ok 3 - write and unknown tools fail closed even if allowlisted
+  ---
+  duration_ms: 0.121458
+  type: 'test'
+  ...
+# Subtest: authenticated native catalog and writes (normal)
+ok 4 - authenticated native catalog and writes (normal)
+  ---
+  duration_ms: 92.142458
+  type: 'test'
+  ...
+# Subtest: authenticated native catalog and writes (pagination)
+ok 5 - authenticated native catalog and writes (pagination)
+  ---
+  duration_ms: 39.276333
+  type: 'test'
+  ...
+# Subtest: upstream redirect is rejected without secret leakage
+ok 6 - upstream redirect is rejected without secret leakage
+  ---
+  duration_ms: 2.524666
+  type: 'test'
+  ...
+# Subtest: upstream cycle is rejected without secret leakage
+ok 7 - upstream cycle is rejected without secret leakage
+  ---
+  duration_ms: 6.189959
+  type: 'test'
+  ...
+# Subtest: end-to-end stdio MCP discovery, status, catalog and policy
+ok 8 - end-to-end stdio MCP discovery, status, catalog and policy
+  ---
+  duration_ms: 1015.751458
+  type: 'test'
+  ...
+# Subtest: legacy negotiation 2025-11-25
+ok 9 - legacy negotiation 2025-11-25
+  ---
+  duration_ms: 39.922417
+  type: 'test'
+  ...
+# Subtest: legacy negotiation 2025-06-18
+ok 10 - legacy negotiation 2025-06-18
+  ---
+  duration_ms: 10.249417
+  type: 'test'
+  ...
+# Subtest: legacy negotiation 2025-03-26
+ok 11 - legacy negotiation 2025-03-26
+  ---
+  duration_ms: 5.290333
+  type: 'test'
+  ...
+# Subtest: legacy negotiation 2024-11-05
+ok 12 - legacy negotiation 2024-11-05
+  ---
+  duration_ms: 5.219
+  type: 'test'
+  ...
+# Subtest: unsupported protocol fails closed
+ok 13 - unsupported protocol fails closed
+  ---
+  duration_ms: 2.652666
+  type: 'test'
+  ...
+# Subtest: SSE native call result is forwarded
+ok 14 - SSE native call result is forwarded
+  ---
+  duration_ms: 30.474209
+  type: 'test'
+  ...
+# Subtest: structured and image content survives the bridge unchanged
+ok 15 - structured and image content survives the bridge unchanged
+  ---
+  duration_ms: 212.011042
+  type: 'test'
+  ...
+# Subtest: native tool isError result is preserved
+ok 16 - native tool isError result is preserved
+  ---
+  duration_ms: 18.286459
+  type: 'test'
+  ...
+# Subtest: RPC errors redact upstream exception text and do not retry
+ok 17 - RPC errors redact upstream exception text and do not retry
+  ---
+  duration_ms: 16.640709
+  type: 'test'
+  ...
+# Subtest: timeout does not retry a dispatched native call
+ok 18 - timeout does not retry a dispatched native call
+  ---
+  duration_ms: 705.297917
+  type: 'test'
+  ...
+# Subtest: already cancelled call does not connect
+ok 19 - already cancelled call does not connect
+  ---
+  duration_ms: 1.512542
+  type: 'test'
+  ...
+# Subtest: active cancellation returns promptly and does not retry
+ok 20 - active cancellation returns promptly and does not retry
+  ---
+  duration_ms: 426.205292
+  type: 'test'
+  ...
+# Subtest: parallel stdio invocations are serialized
+ok 21 - parallel stdio invocations are serialized
+  ---
+  duration_ms: 465.190208
+  type: 'test'
+  ...
+# Subtest: queue overflow is rejected rather than dispatched
+ok 22 - queue overflow is rejected rather than dispatched
+  ---
+  duration_ms: 896.321042
+  type: 'test'
+  ...
+# Subtest: catalog is refreshed before dispatch after screen change
+ok 23 - catalog is refreshed before dispatch after screen change
+  ---
+  duration_ms: 6.570667
+  type: 'test'
+  ...
+# Subtest: changed annotations are reevaluated before dispatch
+ok 24 - changed annotations are reevaluated before dispatch
+  ---
+  duration_ms: 5.682959
+  type: 'test'
+  ...
+# Subtest: 100 page catalog limit stops unique cursor stream
+ok 25 - 100 page catalog limit stops unique cursor stream
+  ---
+  duration_ms: 56.219084
+  type: 'test'
+  ...
+# Subtest: oversized upstream response is rejected
+ok 26 - oversized upstream response is rejected
+  ---
+  duration_ms: 43.200458
+  type: 'test'
+  ...
+# Subtest: oversized arguments are rejected before native dispatch
+ok 27 - oversized arguments are rejected before native dispatch
+  ---
+  duration_ms: 6.087083
+  type: 'test'
+  ...
+# Subtest: unsupported schema fails closed (https://example.invalid/no-fetch, size 59)
+ok 28 - unsupported schema fails closed (https://example.invalid/no-fetch, size 59)
+  ---
+  duration_ms: 6.951375
+  type: 'test'
+  ...
+# Subtest: unsupported schema fails closed (not-a-real-type, size 26)
+ok 29 - unsupported schema fails closed (not-a-real-type, size 26)
+  ---
+  duration_ms: 6.53875
+  type: 'test'
+  ...
+# Subtest: unsupported schema fails closed (https://example.invalid/unknown-dialect, size 69)
+ok 30 - unsupported schema fails closed (https://example.invalid/unknown-dialect, size 69)
+  ---
+  duration_ms: 0.304458
+  type: 'test'
+  ...
+# Subtest: unsupported schema fails closed (object, size 262179)
+ok 31 - unsupported schema fails closed (object, size 262179)
+  ---
+  duration_ms: 0.6005
+  type: 'test'
+  ...
+# Subtest: draft-07 and draft-2020-12 schema validation
+ok 32 - draft-07 and draft-2020-12 schema validation
+  ---
+  duration_ms: 35.284166
+  type: 'test'
+  ...
+# Subtest: unconfigured bridge reports missing token without leaking paths
+ok 33 - unconfigured bridge reports missing token without leaking paths
+  ---
+  duration_ms: 129.407
+  type: 'test'
+  ...
+# Subtest: redirect never forwards token to a second loopback listener
+ok 34 - redirect never forwards token to a second loopback listener
+  ---
+  duration_ms: 2.150666
+  type: 'test'
+  ...
+# Subtest: inherited properties do not satisfy required native arguments
+ok 35 - inherited properties do not satisfy required native arguments
+  ---
+  duration_ms: 6.51825
+  type: 'test'
+  ...
+# Subtest: preflight schema rejects arrays and empty native names
+ok 36 - preflight schema rejects arrays and empty native names
+  ---
+  duration_ms: 158.431292
+  type: 'test'
+  ...
+# Subtest: disconnect after dispatch is not retried
+ok 37 - disconnect after dispatch is not retried
+  ---
+  duration_ms: 11.937875
+  type: 'test'
+  ...
+# Subtest: malformed tool response is rejected by SDK validation
+ok 38 - malformed tool response is rejected by SDK validation
+  ---
+  duration_ms: 11.570416
+  type: 'test'
+  ...
+# Subtest: empty catalog is a valid result
+ok 39 - empty catalog is a valid result
+  ---
+  duration_ms: 4.355792
+  type: 'test'
+  ...
+# Subtest: live smoke script discovers catalog without invoking native tools
+ok 40 - live smoke script discovers catalog without invoking native tools
+  ---
+  duration_ms: 873.879292
+  type: 'test'
+  ...
+# Subtest: live smoke script fails explicitly when token is missing
+ok 41 - live smoke script fails explicitly when token is missing
+  ---
+  duration_ms: 906.098459
+  type: 'test'
+  ...
+# Subtest: timeout configuration rejects -1
+ok 42 - timeout configuration rejects -1
+  ---
+  duration_ms: 0.735
+  type: 'test'
+  ...
+# Subtest: timeout configuration rejects 0
+ok 43 - timeout configuration rejects 0
+  ---
+  duration_ms: 0.071458
+  type: 'test'
+  ...
+# Subtest: timeout configuration rejects NaN
+ok 44 - timeout configuration rejects NaN
+  ---
+  duration_ms: 0.039333
+  type: 'test'
+  ...
+# Subtest: timeout configuration rejects 1.5
+ok 45 - timeout configuration rejects 1.5
+  ---
+  duration_ms: 0.035042
+  type: 'test'
+  ...
+# Subtest: timeout configuration rejects 120001
+ok 46 - timeout configuration rejects 120001
+  ---
+  duration_ms: 0.035791
+  type: 'test'
+  ...
+# Subtest: timeout configuration rejects 1000junk
+ok 47 - timeout configuration rejects 1000junk
+  ---
+  duration_ms: 0.035125
+  type: 'test'
+  ...
+# Subtest: token rejects ""
+ok 48 - token rejects ""
+  ---
+  duration_ms: 1.185667
+  type: 'test'
+  ...
+# Subtest: token rejects "a\\nb"
+ok 49 - token rejects "a\\nb"
+  ---
+  duration_ms: 0.637459
+  type: 'test'
+  ...
+# Subtest: token rejects "a\\rb"
+ok 50 - token rejects "a\\rb"
+  ---
+  duration_ms: 0.454084
+  type: 'test'
+  ...
+# Subtest: token rejects "a\\tb"
+ok 51 - token rejects "a\\tb"
+  ---
+  duration_ms: 0.54925
+  type: 'test'
+  ...
+# Subtest: token rejects "a\\u0000b"
+ok 52 - token rejects "a\\u0000b"
+  ---
+  duration_ms: 0.596084
+  type: 'test'
+  ...
+# Subtest: token rejects "ab"
+ok 53 - token rejects "ab"
+  ---
+  duration_ms: 0.452917
+  type: 'test'
+  ...
+# Subtest: token rejects "aıb"
+ok 54 - token rejects "aıb"
+  ---
+  duration_ms: 0.517292
+  type: 'test'
+  ...
+# Subtest: oversized token is rejected before reading
+ok 55 - oversized token is rejected before reading
+  ---
+  duration_ms: 0.525333
+  type: 'test'
+  ...
+# Subtest: token rejects permissions 604
+ok 56 - token rejects permissions 604
+  ---
+  duration_ms: 0.398041
+  type: 'test'
+  ...
+# Subtest: token rejects permissions 640
+ok 57 - token rejects permissions 640
+  ---
+  duration_ms: 0.466208
+  type: 'test'
+  ...
+# Subtest: token rejects permissions 660
+ok 58 - token rejects permissions 660
+  ---
+  duration_ms: 0.361958
+  type: 'test'
+  ...
+# Subtest: token rejects permissions 601
+ok 59 - token rejects permissions 601
+  ---
+  duration_ms: 0.360833
+  type: 'test'
+  ...
+# Subtest: unknown/destructive annotation fails closed {}
+ok 60 - unknown/destructive annotation fails closed {}
+  ---
+  duration_ms: 0.083625
+  type: 'test'
+  ...
+# Subtest: unknown/destructive annotation fails closed {"readOnlyHint":false}
+ok 61 - unknown/destructive annotation fails closed {"readOnlyHint":false}
+  ---
+  duration_ms: 0.03725
+  type: 'test'
+  ...
+# Subtest: unknown/destructive annotation fails closed {"readOnlyHint":true,"destructiveHint":true}
+ok 62 - unknown/destructive annotation fails closed {"readOnlyHint":true,"destructiveHint":true}
+  ---
+  duration_ms: 0.030625
+  type: 'test'
+  ...
+# Subtest: HTTP 401 is sanitized and never calls tool
+ok 63 - HTTP 401 is sanitized and never calls tool
+  ---
+  duration_ms: 30.484875
+  type: 'test'
+  ...
+# Subtest: HTTP 403 is sanitized and never calls tool
+ok 64 - HTTP 403 is sanitized and never calls tool
+  ---
+  duration_ms: 5.14175
+  type: 'test'
+  ...
+# Subtest: HTTP 404 is sanitized and never calls tool
+ok 65 - HTTP 404 is sanitized and never calls tool
+  ---
+  duration_ms: 3.887083
+  type: 'test'
+  ...
+# Subtest: HTTP 429 is sanitized and never calls tool
+ok 66 - HTTP 429 is sanitized and never calls tool
+  ---
+  duration_ms: 2.828791
+  type: 'test'
+  ...
+# Subtest: HTTP 500 is sanitized and never calls tool
+ok 67 - HTTP 500 is sanitized and never calls tool
+  ---
+  duration_ms: 2.602291
+  type: 'test'
+  ...
+# Subtest: HTTP 503 is sanitized and never calls tool
+ok 68 - HTTP 503 is sanitized and never calls tool
+  ---
+  duration_ms: 2.036375
+  type: 'test'
+  ...
+# Subtest: malformed JSON is sanitized
+ok 69 - malformed JSON is sanitized
+  ---
+  duration_ms: 2.67225
+  type: 'test'
+  ...
+# Subtest: wrong credential cannot fetch catalog
+ok 70 - wrong credential cannot fetch catalog
+  ---
+  duration_ms: 2.400125
+  type: 'test'
+  ...
+# Subtest: duplicate catalog names fail closed
+ok 71 - duplicate catalog names fail closed
+  ---
+  duration_ms: 10.584375
+  type: 'test'
+  ...
+# Subtest: catalog > 2000 tools is rejected
+ok 72 - catalog > 2000 tools is rejected
+  ---
+  duration_ms: 22.771917
+  type: 'test'
+  ...
+# Subtest: schema-invalid arguments do not reach native tool
+ok 73 - schema-invalid arguments do not reach native tool
+  ---
+  duration_ms: 72.10175
+  type: 'test'
+  ...
+# Subtest: schema validation does not coerce or mutate inputs
+ok 74 - schema validation does not coerce or mutate inputs
+  ---
+  duration_ms: 15.537333
+  type: 'test'
+  ...
+# Subtest: wrapper rejects undeclared parameters and recovers after error
+ok 75 - wrapper rejects undeclared parameters and recovers after error
+  ---
+  duration_ms: 910.811625
+  type: 'test'
+  ...
+# Subtest: cancelled queued request never reaches native app
+ok 76 - cancelled queued request never reaches native app
+  ---
+  duration_ms: 779.877833
+  type: 'test'
+  ...
+# Subtest: non-regular FIFO token is rejected without blocking
+ok 77 - non-regular FIFO token is rejected without blocking
+  ---
+  duration_ms: 4.463084
+  type: 'test'
+  ...
+# Subtest: token file owned by another user is rejected
+ok 78 - token file owned by another user is rejected
+  ---
+  duration_ms: 0.676292
+  type: 'test'
+  ...
+# Subtest: invalid startup configuration is sanitized (EDITS_ALLOWED_TOOLS)
+ok 79 - invalid startup configuration is sanitized (EDITS_ALLOWED_TOOLS)
+  ---
+  duration_ms: 95.208209
+  type: 'test'
+  ...
+# Subtest: invalid startup configuration is sanitized (EDITS_MCP_URL)
+ok 80 - invalid startup configuration is sanitized (EDITS_MCP_URL)
+  ---
+  duration_ms: 108.736917
+  type: 'test'
+  ...
+# Subtest: invalid startup configuration is sanitized (EDITS_TIMEOUT_MS)
+ok 81 - invalid startup configuration is sanitized (EDITS_TIMEOUT_MS)
+  ---
+  duration_ms: 113.9245
+  type: 'test'
+  ...
+1..81
+# tests 81
+# suites 0
+# pass 81
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5255.619875
+# start of coverage report
+# --------------------------------------------------------------------
+# file                | line % | branch % | funcs % | uncovered lines
+# --------------------------------------------------------------------
+# scripts             |        |          |         | 
+#  smoke.mjs          |  94.12 |    33.33 |   50.00 | 32-33
+# src                 |        |          |         | 
+#  backend.mjs        | 100.00 |    91.49 |   91.67 | 
+#  config.mjs         | 100.00 |    97.96 |  100.00 | 
+#  server.mjs         | 100.00 |   100.00 |   75.00 | 
+#  validation.mjs     | 100.00 |   100.00 |  100.00 | 
+# test                |        |          |         | 
+#  bridge.test.mjs    |  99.17 |    96.36 |   96.97 | 43
+#  protocol.test.mjs  | 100.00 |   100.00 |  100.00 | 
+#  security.test.mjs  | 100.00 |   100.00 |  100.00 | 
+#  support            |        |          |         | 
+#   fixture.mjs       | 100.00 |    95.83 |   92.31 | 
+# --------------------------------------------------------------------
+# all files           |  99.58 |    96.00 |   95.80 | 
+# --------------------------------------------------------------------
+# end of coverage report

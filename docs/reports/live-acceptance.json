@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-06",
+  "application": {
+    "name": "Edits",
+    "version": "454.0.0"
+  },
+  "nativeToolsDiscovered": 274,
+  "syntheticMediaOnly": true,
+  "existingProjectsEdited": false,
+  "externalPublishing": false,
+  "checks": {
+    "nativeDiscovery": true,
+    "nativeReads": true,
+    "newProject": true,
+    "mediaImportAfterUserFileGrant": true,
+    "trimSixSecondsToFive": true,
+    "splitAtTwoSeconds": true,
+    "textOverlay": true,
+    "saveAndReopen": true,
+    "writeGateDeniedRename": true,
+    "nativeExportComplete": true,
+    "independentProbe": true,
+    "fullAudioVideoDecode": true,
+    "renderedTextInspected": true
+  },
+  "expectedDenials": [
+    "import_without_security_scoped_file_access",
+    "export_to_ungranted_directory"
+  ],
+  "output": {
+    "durationSeconds": 5,
+    "width": 2560,
+    "height": 1440,
+    "frameRate": "30/1",
+    "videoCodec": "hevc",
+    "audioCodec": "aac",
+    "bytes": 7327785,
+    "sha256": "aabf53ec0ffa6bc1d905badd3ec28318439262064398fe6a9cce106ba31b6201"
+  },
+  "privacy": {
+    "rawResponsesPublished": false,
+    "tokensPublished": false,
+    "privatePathsPublished": false,
+    "projectIdsPublished": false,
+    "deviceInventoryPublished": false
+  }
+}

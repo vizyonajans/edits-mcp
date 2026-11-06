@@ -1,0 +1,23 @@
+
+> edits-mcp@0.1.0 test:python
+> python3 -m unittest discover -s test -p "*_test.py" -v
+
+test_corrupt_plist_is_reported (scripts_test.DoctorTests) ... ok
+test_missing_app_is_normal_report (scripts_test.DoctorTests) ... ok
+test_missing_executable_is_reported (scripts_test.DoctorTests) ... ok
+test_signature_failure_is_not_verified_identity (scripts_test.DoctorTests) ... ok
+test_subprocess_timeout_is_sanitized (scripts_test.DoctorTests) ... ok
+test_echoing_getpass_fallback_is_refused (scripts_test.TokenTests) ... ok
+test_invalid_inputs_create_no_file (scripts_test.TokenTests) ... ok
+test_maximum_file_size_includes_newline (scripts_test.TokenTests) ... ok
+test_missing_argument_is_usage_error (scripts_test.TokenTests) ... ok
+test_never_follows_symlink (scripts_test.TokenTests) ... ok
+test_never_overwrites (scripts_test.TokenTests) ... ok
+test_noninteractive_refused_before_reading_secret (scripts_test.TokenTests) ... ok
+test_relative_path_rejected (scripts_test.TokenTests) ... ok
+test_writes_private_file_without_output (scripts_test.TokenTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.052s
+
+OK
