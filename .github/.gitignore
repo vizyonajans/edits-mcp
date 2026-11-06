@@ -1,0 +1,10 @@
+node_modules/
+.env
+*.token
+.DS_Store
+__pycache__/
+*.pyc
+coverage/
+.env.*
+!.env.example
+verification.json
